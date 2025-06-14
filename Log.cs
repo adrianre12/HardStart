@@ -4,7 +4,7 @@ namespace SEtest
 {
     public static class Log
     {
-        const string Prefix = "SETest";
+        const string Prefix = "HardStart";
 
         public static bool DebugLog;
         public static void Msg(string msg)

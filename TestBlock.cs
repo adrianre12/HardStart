@@ -7,7 +7,6 @@ using VRage.ObjectBuilders;
 namespace SEtest
 {
     [MyEntityComponentDescriptor(typeof(MyObjectBuilder_VirtualMass), false, new[] { "TestBlockLarge", "TestBlockSmall" })]
-    //[MyEntityComponentDescriptor(typeof(MyObjectBuilder_Thrust), false)]
     internal class TestBlock : MyGameLogicComponent
     {
         private IMyFunctionalBlock block;
