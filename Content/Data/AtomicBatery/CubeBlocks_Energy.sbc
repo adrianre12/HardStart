@@ -49,7 +49,7 @@
             <MaxPowerOutput>0.05</MaxPowerOutput>
 
             <InventorySize>
-                <X>0.1</X>
+                <X>0.2</X>
                 <Y>0.1</Y>
                 <Z>0.1</Z>
             </InventorySize>
