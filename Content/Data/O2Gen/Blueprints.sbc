@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Blueprints>
+    <Blueprint>
+            <Id>
+                <TypeId>BlueprintDefinition</TypeId>
+                <SubtypeId>StoneToOxygen</SubtypeId>
+            </Id>
+            <DisplayName>DisplayName_Item_Oxygen</DisplayName>
+            <Icon>Textures\GUI\Icons\ingot\gravel_ingot.dds</Icon>
+            <Prerequisites>
+                <Item Amount="1" TypeId="Ore" SubtypeId="Stone" />
+            </Prerequisites>
+            <Result Amount="0.9" TypeId="Ingot" SubtypeId="Stone" />
+            <BaseProductionTimeInSeconds>0.1</BaseProductionTimeInSeconds>
+        </Blueprint>
+
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>EmergencyOxygenGeneratorKit</SubtypeId>
+			</Id>
+			<DisplayName>Emergency Oxygen Generator Kit</DisplayName>
+			<Icon>Textures\GUI\Icons\Components\construction_restricted.dds</Icon>
+			<Prerequisites>
+				<Item Amount="1" TypeId="Ingot" SubtypeId="Iron" />
+			</Prerequisites>
+			<Result Amount="1" TypeId="Component" SubtypeId="EmergencyOxygenGeneratorKit" />
+			<BaseProductionTimeInSeconds>1</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+		</Blueprint>
+     </Blueprints>
+</Definitions>
