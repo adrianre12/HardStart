@@ -10,7 +10,6 @@
             <Name>Admin</Name>
 			<StrictSearch>true</StrictSearch>
             <ItemIds>
-                <string>OxygenGenerator/EmergencyOxygenGeneratorLarge</string>
 				<string>OxygenGenerator/EmergencyOxygenGeneratorSmall</string>
             </ItemIds>
         </Category>

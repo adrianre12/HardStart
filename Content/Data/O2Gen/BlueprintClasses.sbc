@@ -17,15 +17,8 @@
     </BlueprintClasses>
 	
     <BlueprintClassEntries>
-
-        <Entry Class="LargeBlocks" BlueprintSubtypeId="OxygenGenerator/EmergencyOxygenGeneratorLarge" />
         <Entry Class="SmallBlocks" BlueprintSubtypeId="OxygenGenerator/EmergencyOxygenGeneratorSmall" />
-
 		<!-- Gas Generators -->
-		<Entry Class="Stone" BlueprintSubtypeId="StoneToOxygen" />
-
-		<!--<Entry Class="Ice" BlueprintSubtypeId="IceToOxygen" />-->
-		<!--<Entry Class="OxygenBottles" BlueprintSubtypeId="OxygenBottlesRefill" />-->
-        <!--Entry Class="HydrogenBottles" BlueprintSubtypeId="HydrogenBottlesRefill" />-->		
+		<Entry Class="Stone" BlueprintSubtypeId="StoneToOxygen" />	
     </BlueprintClassEntries>
 </Definitions>
