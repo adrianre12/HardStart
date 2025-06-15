@@ -43,12 +43,12 @@
             <ResourceSourceGroup>Reactors</ResourceSourceGroup>
             <ResourceSinkGroup>Factory</ResourceSinkGroup>
             <IceConsumptionPerSecond>5</IceConsumptionPerSecond>
-            <InventoryMaxVolume>1</InventoryMaxVolume>
+            <InventoryMaxVolume>0.125</InventoryMaxVolume>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <InventorySize>
-                <X>1</X>
-                <Y>1</Y>
-                <Z>1</Z>
+                <X>0.5</X>
+                <Y>0.5</Y>
+                <Z>0.5</Z>
             </InventorySize>
 
             <InventoryFillFactorMin>0.3</InventoryFillFactorMin>
