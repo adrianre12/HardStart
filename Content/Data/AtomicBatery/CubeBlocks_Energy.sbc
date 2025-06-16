@@ -9,7 +9,7 @@
             </Id>
             <DisplayName>Emergency Atomic Battery</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\nuclear_reactor.dds</Icon>
-            <Description>A low power but long lived Betavoltaic power source. Requires a Tritium Cell to function. </Description>
+            <Description>A low power but long lived Betavoltaic power source that can be reused. Requires a Tritium Cell to function. </Description>
             <CubeSize>Small</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
             <Size x="1" y="1" z="1" />

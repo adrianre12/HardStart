@@ -7,7 +7,7 @@
                 <TypeId>Component</TypeId>
 			    <SubtypeId>EmergencyOxygenGeneratorKit</SubtypeId>
 			</Id>
-			<DisplayName>Emergency Oxygen Generator Kit</DisplayName>
+			<DisplayName>Emergency Oxygen Generator</DisplayName>
             <Icon>Textures\GUI\Icons\Components\construction_restricted.dds</Icon>
             <Size>
                 <X>0.2</X>

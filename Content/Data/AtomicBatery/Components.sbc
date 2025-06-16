@@ -7,7 +7,7 @@
                 <TypeId>Component</TypeId>
 			    <SubtypeId>EmergencySmallGeneratorKit</SubtypeId>
 			</Id>
-			<DisplayName>Emergency Atomic Battery Kit</DisplayName>
+			<DisplayName>Emergency Atomic Battery</DisplayName>
             <Icon>Textures\GUI\Icons\Components\construction_restricted.dds</Icon>
             <Size>
                 <X>0.2</X>
