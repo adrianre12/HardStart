@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <BlueprintClasses>
+<!--
 		<Class>
 			<Id>
 				<TypeId>BlueprintClassDefinition</TypeId>
@@ -14,11 +15,27 @@
 			<InputConstraintIcon>Textures\GUI\Icons\filter_ore.dds</InputConstraintIcon>
 			<OutputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</OutputConstraintIcon>
 		</Class>
-    </BlueprintClasses>
+-->	
+	<Class>
+		<Id>
+			<TypeId>BlueprintClassDefinition</TypeId>
+			<SubtypeId>StoneDust</SubtypeId>
+		</Id>
+		<DisplayName>Stone Dust</DisplayName>
+		<Description>Finely Ground Stone.</Description>
+		<Icon>Textures\GUI\Icons\ore_H2O_ice.dds</Icon>
+		<HighlightIcon>Textures\GUI\Icons\buttons\large_block.dds</HighlightIcon>
+		<FocusIcon>Textures\GUI\Icons\buttons\large_block_focus.dds</FocusIcon>
+		<InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+		<OutputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</OutputConstraintIcon>
+	</Class>
+	</BlueprintClasses>
 	
     <BlueprintClassEntries>
         <Entry Class="SmallBlocks" BlueprintSubtypeId="OxygenGenerator/EmergencyOxygenGeneratorSmall" />
 		<!-- Gas Generators -->
-		<Entry Class="Stone" BlueprintSubtypeId="StoneToOxygen" />	
-    </BlueprintClassEntries>
+		<Entry Class="Stone" BlueprintSubtypeId="StoneToOxygen" />
+		<Entry Class="StoneDust" BlueprintSubtypeId="StoneDustToOxygen" />
+
+	</BlueprintClassEntries>
 </Definitions>
