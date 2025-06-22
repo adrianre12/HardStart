@@ -6,16 +6,16 @@
 				<TypeId>BlueprintDefinition</TypeId>
 				<SubtypeId>EmergencyStoneOreToIngotBasic</SubtypeId>
 			</Id>
-			<DisplayName>DisplayName_BlueprintClass_Ingots</DisplayName>
+			<DisplayName>Refine Stone</DisplayName>
 			<Icon>Textures\GUI\Icons\ingot\ingot_class.dds</Icon>
 			<Prerequisites>
 				<Item Amount="100" TypeId="Ore" SubtypeId="Stone" />
 			</Prerequisites>
 			<Results>
-				<Item Amount="1.4" TypeId="Ingot" SubtypeId="StoneDust" />
+				<Item Amount="14" TypeId="Ingot" SubtypeId="StoneDust" />
 				<Item Amount="3" TypeId="Ingot" SubtypeId="Iron" />
 				<Item Amount="0.24" TypeId="Ingot" SubtypeId="Nickel" />
-				<Item Amount="0.4" TypeId="Ingot" SubtypeId="Silicon" />
+				<Item Amount="0.44" TypeId="Ingot" SubtypeId="Silicon" />
 			</Results>
 			<Priority>1000</Priority>
 			<BaseProductionTimeInSeconds>1</BaseProductionTimeInSeconds>

@@ -14,7 +14,7 @@
                 <Z>0.072</Z>
             </Size>
             <Mass>1</Mass>
-            <Volume>0.37</Volume>
+            <Volume>0.15</Volume>
             <Model>Models\Ingots\stone_ingot.mwm</Model>
             <PhysicalMaterial>Metal</PhysicalMaterial>
             <IconSymbol>Dust</IconSymbol>

@@ -26,8 +26,26 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </AdditionalFiles>
     <AdditionalFiles Remove="Content\*\**\*.cs" />
-    <AdditionalFiles Remove="Content\Other content folders" />
+    <Compile Remove="Blender\Data\**" />
+    <EmbeddedResource Remove="Blender\Data\**" />
+    <None Remove="Blender\Data\**" />
+    <AdditionalFiles Remove="Content\Modelsx\Cubes\small\EmergencySurvivalKit.mwm" />
+    <AdditionalFiles Remove="Content\Modelsx\Cubes\small\EmergencySurvivalKit_BS1.mwm" />
+    <AdditionalFiles Remove="Content\Modelsx\Cubes\small\EmergencySurvivalKit_BS1_LOD1.mwm" />
+    <AdditionalFiles Remove="Content\Modelsx\Cubes\small\EmergencySurvivalKit_BS1_LOD2.mwm" />
+    <AdditionalFiles Remove="Content\Modelsx\Cubes\small\EmergencySurvivalKit_BS1_LOD3.mwm" />
+    <AdditionalFiles Remove="Content\Modelsx\Cubes\small\EmergencySurvivalKit_BS2.mwm" />
+    <AdditionalFiles Remove="Content\Modelsx\Cubes\small\EmergencySurvivalKit_BS2_LOD1.mwm" />
+    <AdditionalFiles Remove="Content\Modelsx\Cubes\small\EmergencySurvivalKit_BS2_LOD2.mwm" />
+    <AdditionalFiles Remove="Content\Modelsx\Cubes\small\EmergencySurvivalKit_BS2_LOD3.mwm" />
+    <AdditionalFiles Remove="Content\Modelsx\Cubes\small\EmergencySurvivalKit_LOD1.mwm" />
+    <AdditionalFiles Remove="Content\Modelsx\Cubes\small\EmergencySurvivalKit_LOD2.mwm" />
+    <AdditionalFiles Remove="Content\Modelsx\Cubes\small\EmergencySurvivalKit_LOD3.mwm" />
     <AdditionalFiles Remove="Content\Data\SBC files can go here" />
     <None Remove="thumb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Blender\" />
+    <Folder Include="Content\Models\" />
   </ItemGroup>
 </Project>

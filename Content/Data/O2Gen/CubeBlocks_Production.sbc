@@ -18,9 +18,10 @@
 			<Model>Models\Cubes\Small\CargoContainerSmall.mwm</Model>
 			<SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
 			<Components>
+				<Component Subtype="Computer" Count="1" />
 				<Component Subtype="EmergencyOxygenGeneratorKit" Count="1" />
 			</Components>
-			<CriticalComponent Subtype="EmergencyOxygenGeneratorKit" Index="0" />
+			<CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
 				<MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
 				<MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
@@ -71,6 +72,8 @@
 			</ProducedGases>
 			<BlueprintClasses>
 				<Class>StoneDust</Class>
+				<Class>OxygenBottles</Class>
+				<Class>HydrogenBottles</Class>
 			</BlueprintClasses>
 			<DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
 			<DamagedSound>ParticleWeapExpl</DamagedSound>

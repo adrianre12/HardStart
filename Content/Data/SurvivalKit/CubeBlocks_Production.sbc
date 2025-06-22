@@ -8,28 +8,18 @@
             </Id>
             <DisplayName>Emergency Survival Kit</DisplayName>
             <Description>A small low power Survival Kit that can be reused.</Description>
-            <!--<Icon>Textures\GUI\Icons\Cubes\SurvivalKitSmall.dds</Icon>-->
 			<Icon>Textures\GUI\Icons\Cubes\ProgrammableBlockReskin.dds</Icon>
 			<CubeSize>Small</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <!--<Size x="4" y="3" z="3" />-->
 			<Size x="1" y="1" z="1" />
 			<ModelOffset x="0" y="0" z="0" />
-            <!--<Model>Models\Cubes\Small\SurvivalKit.mwm</Model>-->
-			<Model>Models\Cubes\Small\ProgrammableBlockReskin.mwm</Model>
+			<Model>Models\Cubes\small\EmergencySurvivalKit.mwm</Model>
 			<Components>
-                <Component Subtype="EmergencySurvivalKitKit" Count="1" />
+				<Component Subtype="Computer" Count="1" />
+				<Component Subtype="EmergencySurvivalKitKit" Count="1" />
             </Components>
-            <CriticalComponent Subtype="EmergencySurvivalKitKit" Index="0" />
+            <CriticalComponent Subtype="Computer" Index="0" />
             <MountPoints>
-<!--                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="3"/>
-                <MountPoint Side="Back" StartX="1" StartY="0" EndX="2" EndY="1"/>
-                <MountPoint Side="Back" StartX="2" StartY="0" EndX="4" EndY="3"/>
-                <MountPoint Side="Front" StartX="0" StartY="0" EndX="4" EndY="3" />
-                <MountPoint Side="Left" StartX="0" StartY="0" EndX="3" EndY="3" />
-                <MountPoint Side="Right" StartX="0" StartY="0" EndX="3" EndY="3" />
-                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="4" EndY="3" Default="true" />
-                <MountPoint Side="Top" StartX="0" StartY="0" EndX="4" EndY="3" /> -->
 				<MountPoint Side="Bottom" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9" Default="true" />
 				<MountPoint Side="Left" StartX="0.1" StartY="0" EndX="0.7" EndY="0.9" />
 				<MountPoint Side="Front" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9" />
@@ -37,17 +27,11 @@
 				<MountPoint Side="Right" StartX="0.3" StartY="0" EndX="0.9" EndY="0.9" />
 				<MountPoint Side="Top" StartX="0.1" StartY="0.3" EndX="0.9" EndY="1" />
 			</MountPoints>
-<!--            <MirroringZ>X</MirroringZ>
-            <MirroringX>Z</MirroringX>
-            <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\SurvivalKitConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\SurvivalKitConstruction_2.mwm" />
-            </BuildProgressModels> -->
 			<MirroringZ>Y</MirroringZ>
 			<MirroringY>Z</MirroringY>
 			<BuildProgressModels>
-				<Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ProgrammableBlockReskinConstruction_1.mwm" />
-				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ProgrammableBlockReskinConstruction_2.mwm" />
+				<Model BuildPercentUpperBound="0.50" File="Models\Cubes\small\EmergencySurvivalKit_BS1.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\EmergencySurvivalKit_BS2.mwm"/>
 			</BuildProgressModels>
             <BlockPairName>EmergencySurvivalKit</BlockPairName>
             <EdgeType>Light</EdgeType>
@@ -55,25 +39,20 @@
             <ResourceSinkGroup>LifeSupport</ResourceSinkGroup>
             <BlueprintClasses>
 				<Class>EmergencySurvivalKitIngots</Class>
-                <Class>SurvivalKitIngots</Class>
 				<Class>BasicComponents</Class>
 				<Class>BasicEquipment</Class>
                 <Class>BasicTools</Class>
 				<Class>BasicWeapons</Class>
 				<Class>BasicConsumables</Class>
             </BlueprintClasses>
-            <AssemblySpeed>0.03</AssemblySpeed>
-<!--            <ScreenAreas>
-                <ScreenArea Name="CockpitScreen_01" DisplayName="Top panel" />
-                <ScreenArea Name="CockpitScreen_02" DisplayName="Bottom panel" />
-            </ScreenAreas>-->
+            <AssemblySpeed>0.3</AssemblySpeed>
 			<ScreenAreas>
 				<ScreenArea Name="CockpitScreen_01" DisplayName="DisplayName_Screen_Large" TextureResolution="256" ScreenWidth="10" ScreenHeight="7" />
 				<ScreenArea Name="CockpitScreen_02" DisplayName="DisplayName_Screen_Keyboard" TextureResolution="128" ScreenWidth="11" ScreenHeight="4" />
 			</ScreenAreas>
             <StandbyPowerConsumption>0.0015</StandbyPowerConsumption>
-            <OperationalPowerConsumption>0.02</OperationalPowerConsumption>
-            <InventoryMaxVolume>1</InventoryMaxVolume>
+            <OperationalPowerConsumption>0.029</OperationalPowerConsumption>
+            <InventoryMaxVolume>0.125</InventoryMaxVolume>
             <InventorySize>
                 <X>0.5</X>
                 <Y>0.5</Y>
@@ -110,62 +89,6 @@
                 <unsignedInt>240</unsignedInt>
             </TieredUpdateTimes>
         </Definition>
-<!--
-        <Definition xsi:type="MyObjectBuilder_ProgrammableBlockDefinition">
-            <Id>
-                <TypeId>MyProgrammableBlock</TypeId>
-                <SubtypeId>SmallProgrammableBlockReskin</SubtypeId>
-            </Id>
-            <Public>true</Public>
-            <DisplayName>DisplayName_Programmable_BlockReskin</DisplayName>
-            <Icon>Textures\GUI\Icons\Cubes\ProgrammableBlockReskin.dds</Icon>
-            <Description>Description_ProgrammableBlock</Description>
-            <CubeSize>Small</CubeSize>
-            <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="1" y="1" z="1" />
-            <ModelOffset x="0" y="0" z="0" />
-            <Model>Models\Cubes\Small\ProgrammableBlockReskin.mwm</Model>
-            <Components>
-                <Component Subtype="SteelPlate" Count="1" />
-                <Component Subtype="Construction" Count="2" />
-                <Component Subtype="LargeTube" Count="2" />
-                <Component Subtype="Motor" Count="1" />
-                <Component Subtype="Display" Count="1" />
-                <Component Subtype="Computer" Count="2" />
-                <Component Subtype="SteelPlate" Count="1" />
-            </Components>
-            <CriticalComponent Subtype="Computer" Index="0" />
-            <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ProgrammableBlockReskinConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ProgrammableBlockReskinConstruction_2.mwm" />
-            </BuildProgressModels>
-            <BlockPairName>ProgrammableBlockReskin</BlockPairName>
-            <MirroringZ>Y</MirroringZ>
-            <MirroringY>Z</MirroringY>
-            <EdgeType>Light</EdgeType>
-            <BuildTimeSeconds>8</BuildTimeSeconds>
-            <MountPoints>
-                <MountPoint Side="Bottom" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9" Default="true" />
-                <MountPoint Side="Left" StartX="0.1" StartY="0" EndX="0.7" EndY="0.9" />
-                <MountPoint Side="Front" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9" />
-                <MountPoint Side="Back" StartX="0.2" StartY="0" EndX="0.8" EndY="0.1" />
-                <MountPoint Side="Right" StartX="0.3" StartY="0" EndX="0.9" EndY="0.9" />
-                <MountPoint Side="Top" StartX="0.1" StartY="0.3" EndX="0.9" EndY="1" />
-            </MountPoints>
-            <ScreenAreas>
-                <ScreenArea Name="CockpitScreen_01" DisplayName="DisplayName_Screen_Large" TextureResolution="256" ScreenWidth="10" ScreenHeight="7" />
-                <ScreenArea Name="CockpitScreen_02" DisplayName="DisplayName_Screen_Keyboard" TextureResolution="128" ScreenWidth="11" ScreenHeight="4" />
-            </ScreenAreas>
-            <ResourceSinkGroup>Utility</ResourceSinkGroup>
-            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
-            <DamagedSound>ParticleElectrical</DamagedSound>
-            <EmissiveColorPreset>Default</EmissiveColorPreset>
-            <DestroyEffect>BlockDestroyedExplosion_Tiny</DestroyEffect>
-            <DestroySound>WepSmallWarheadExpl</DestroySound>
-            <PCU>100</PCU>
-            <IsAirTight>false</IsAirTight>
-            <DLC>Automatons</DLC>
-        </Definition>-->		
 		
     </CubeBlocks>
 </Definitions>
