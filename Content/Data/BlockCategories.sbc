@@ -10,7 +10,7 @@
             <Name>Admin</Name>
 			<StrictSearch>true</StrictSearch>
             <ItemIds>
-                <string>VirtualMass/TestBlockLarge</string>
+                <string>VirtualMass/TestBlockSmall</string>
             </ItemIds>
         </Category>
     </CategoryClasses>
