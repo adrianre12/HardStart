@@ -26,9 +26,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </AdditionalFiles>
     <AdditionalFiles Remove="Content\*\**\*.cs" />
-    <Compile Remove="Blender\Data\**" />
-    <EmbeddedResource Remove="Blender\Data\**" />
-    <None Remove="Blender\Data\**" />
     <AdditionalFiles Remove="Content\Modelsx\Cubes\small\EmergencySurvivalKit.mwm" />
     <AdditionalFiles Remove="Content\Modelsx\Cubes\small\EmergencySurvivalKit_BS1.mwm" />
     <AdditionalFiles Remove="Content\Modelsx\Cubes\small\EmergencySurvivalKit_BS1_LOD1.mwm" />
@@ -45,7 +42,6 @@
     <None Remove="thumb.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Blender\" />
     <Folder Include="Content\Models\" />
   </ItemGroup>
 </Project>
