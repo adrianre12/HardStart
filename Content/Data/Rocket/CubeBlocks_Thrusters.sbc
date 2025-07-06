@@ -4,17 +4,17 @@
 		<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
 			<Id>
 				<TypeId>Thrust</TypeId>
-				<SubtypeId>SmallBlockRocket</SubtypeId>
+				<SubtypeId>SmallEjectorSeatRocket</SubtypeId>
 			</Id>
 			<DisplayName>Small Rocket</DisplayName>
-			<Icon>Textures\GUI\Icons\Cubes\HydrogenThrusterSmall.dds</Icon>
+			<Icon>Textures\GUI\Icons\EjectorSeatRocket.dds</Icon>
 			<Description>Solid fuel rocket</Description>
 			<CubeSize>Small</CubeSize>
 			<GuiVisible>false</GuiVisible>
 			<BlockTopology>TriangleMesh</BlockTopology>
-			<Size x="1" y="1" z="1" />
+			<Size x="1" y="1" z="3" />
 			<ModelOffset x="0" y="0" z="0" />
-			<Model>Models\Cubes\Small\HydrogenThrusterSmall.mwm</Model>
+			<Model>Textures\GUI\Icons\EjectorSeatRocket.dds</Model>
 			<ThrusterType>Hydrogen</ThrusterType>
 			<SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
 			<Components>
@@ -27,16 +27,13 @@
 			</Components>
 			<CriticalComponent Subtype="LargeTube" Index="0" />
 			<MountPoints>
-				<MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" Default="true"/>
-				<MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
-				<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
-				<MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
-				<MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="1.00" EndX="1.00" EndY="2.00"/>
 			</MountPoints>
 			<BuildProgressModels>
-				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\Small\HydrogenThrusterSmall_Construction_1.mwm" />
-				<Model BuildPercentUpperBound="0.66" File="Models\Cubes\Small\HydrogenThrusterSmall_Construction_2.mwm" />
-				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\HydrogenThrusterSmall_Construction_3.mwm" />
+				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\small\EjectorSeatRocket_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\Cubes\small\EjectorSeatRocket_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\EjectorSeatRocket_BS3.mwm"/>
 			</BuildProgressModels>
 			<VoxelPlacement>
 				<StaticMode>
@@ -50,7 +47,7 @@
 					<MinAllowed>0</MinAllowed>
 				</DynamicMode>
 			</VoxelPlacement>
-			<BlockPairName>SmallRocket</BlockPairName>
+			<BlockPairName>EjectorSeatRocket</BlockPairName>
 			<Center x="0" y="0" z="0" />
 			<MirroringZ>Y</MirroringZ>
 			<EdgeType>Light</EdgeType>

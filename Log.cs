@@ -1,6 +1,6 @@
 ﻿using VRage.Utils;
 
-namespace SEtest
+namespace HardStart
 {
     public static class Log
     {

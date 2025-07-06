@@ -9,7 +9,7 @@ using VRage.ObjectBuilders;
 using VRageMath;
 using VRageRender;
 
-namespace SEtest
+namespace HardStart
 {
     [MyEntityComponentDescriptor(typeof(MyObjectBuilder_VirtualMass), false, new[] { "TestBlockSmall" })]
     internal class TestBlock : MyGameLogicComponent

@@ -7,9 +7,9 @@ using VRage.ModAPI;
 using VRage.ObjectBuilders;
 using VRageMath;
 
-namespace SEtest
+namespace HardStart
 {
-    [MyEntityComponentDescriptor(typeof(MyObjectBuilder_Thrust), false, new[] { "SmallBlockRocket" })]
+    [MyEntityComponentDescriptor(typeof(MyObjectBuilder_Thrust), false, new[] { "SmallEjectorSeatRocket" })]
     internal class RocketBlock : MyGameLogicComponent
     {
         private IMyThrust block;
