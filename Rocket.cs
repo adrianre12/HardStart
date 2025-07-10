@@ -12,14 +12,19 @@ namespace HardStart
     [MyEntityComponentDescriptor(typeof(MyObjectBuilder_Thrust), false, new[] { "SmallEjectorSeatRocket" })]
     internal class RocketBlock : MyGameLogicComponent
     {
+        const double startHeight = 200;
+        const double stopHeight = 2;
+        const float targetSpeedHigh = 5f;
+        const float targetSpeedLow = 1.0f;
+        const double speedChangeHeight = 10;
+
         private IMyThrust block;
         private MyCubeGrid grid;
-        private float rotationSpeed = 0.05f;
-        private float targetSpeed = 1f ;
+        private float rotationSpeed = 0.1f; //0.05f;
+        private float targetSpeed = targetSpeedHigh;
         private MyPlanet closestPlanet;
         private double height;
         private bool active;
-        private double deployHeight = 200;
         private Vector3 up;
         private Quaternion to;
         private Quaternion from;
@@ -78,11 +83,12 @@ namespace HardStart
 
                 var speed = grid.Physics.Speed;
                 var multiplier = targetSpeed / speed;
-                Log.Msg($"speed={speed} multiplier={multiplier}");
+                //Log.Msg($"speed={speed} multiplier={multiplier}");
 
                 if (speed - decreaseStep > targetSpeed)
                     multiplier = (speed - decreaseStep) / speed;
                 grid.Physics.LinearVelocity = grid.Physics.LinearVelocity * multiplier;
+                grid.Physics.AngularVelocity = Vector3.Zero;
             }
         }
 
@@ -96,16 +102,22 @@ namespace HardStart
             
             if (closestPlanet != null )
                 height = closestPlanet.GetHeightFromSurface(grid.WorldMatrix.Translation);
-            active = (height < deployHeight && height > 1);
-            if (active) 
+            active = (height < startHeight && height > stopHeight);
+            if (active)
+            {
                 block.ThrustOverridePercentage = 1f;
-            else 
+                if (height < speedChangeHeight)
+                {
+                    targetSpeed = targetSpeedLow;
+                }
+            }
+            else
             {
                 block.ThrustOverridePercentage = 0;
-                decreaseStep = grid.Physics.Speed/150;
+                decreaseStep = grid.Physics.Speed / 150;
             }
 
-            if (height < 1 || grid.Physics.Speed < 0.05)
+            if (height < stopHeight || grid.Physics.Speed < 0.05)
             {
                 Log.Msg($"Landed height={height} speed={grid.Physics.Speed}");
                 landed = true;
