@@ -11,6 +11,7 @@
 			<StrictSearch>true</StrictSearch>
             <ItemIds>
                 <string>Thrust/SmallEjectorSeatRocket</string>
+				<string>BatteryBlock/EjectorController</string>
             </ItemIds>
         </Category>
     </CategoryClasses>

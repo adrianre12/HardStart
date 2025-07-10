@@ -8,13 +8,13 @@
 			</Id>
 			<DisplayName>Small Rocket</DisplayName>
 			<Icon>Textures\GUI\Icons\EjectorSeatRocket.dds</Icon>
-			<Description>Solid fuel rocket</Description>
+			<Description>Bi-propellant Monomethylhydrazine/Dinitrogen Tetroxide Ejector seat engine.</Description>
 			<CubeSize>Small</CubeSize>
 			<GuiVisible>false</GuiVisible>
 			<BlockTopology>TriangleMesh</BlockTopology>
 			<Size x="1" y="1" z="3" />
 			<ModelOffset x="0" y="0" z="0" />
-			<Model>Textures\GUI\Icons\EjectorSeatRocket.dds</Model>
+			<Model>Models\Cubes\small\EjectorSeatRocket.mwm</Model>
 			<ThrusterType>Hydrogen</ThrusterType>
 			<SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
 			<Components>
@@ -35,7 +35,7 @@
 				<Model BuildPercentUpperBound="0.67" File="Models\Cubes\small\EjectorSeatRocket_BS2.mwm"/>
 				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\EjectorSeatRocket_BS3.mwm"/>
 			</BuildProgressModels>
-			<VoxelPlacement>
+<!--			<VoxelPlacement>
 				<StaticMode>
 					<PlacementMode>Volumetric</PlacementMode>
 					<MaxAllowed>0.2</MaxAllowed>
@@ -46,7 +46,7 @@
 					<MaxAllowed>0.2</MaxAllowed>
 					<MinAllowed>0</MinAllowed>
 				</DynamicMode>
-			</VoxelPlacement>
+			</VoxelPlacement> -->
 			<BlockPairName>EjectorSeatRocket</BlockPairName>
 			<Center x="0" y="0" z="0" />
 			<MirroringZ>Y</MirroringZ>
