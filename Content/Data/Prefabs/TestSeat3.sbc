@@ -2,22 +2,22 @@
 <Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Prefabs>
     <Prefab xsi:type="MyObjectBuilder_PrefabDefinition">
-      <Id Type="MyObjectBuilder_PrefabDefinition" Subtype="EjectorSeat" />
+      <Id Type="MyObjectBuilder_PrefabDefinition" Subtype="TestSeat3" />
       <CubeGrids>
         <CubeGrid>
           <SubtypeName />
-          <EntityId>80296340626155544</EntityId>
+          <EntityId>92805925127761840</EntityId>
           <PersistentFlags>CastShadows InScene</PersistentFlags>
-          <Name>126636433553959467</Name>
+          <Name>92805925127761840</Name>
           <PositionAndOrientation>
             <Position x="0" y="0" z="0" />
-            <Forward x="-0.0942237452" y="0.2054614" z="-0.9741188" />
-            <Up x="-0.9370404" y="0.312197566" z="0.156486049" />
+            <Forward x="-0.5793326" y="-0.428497255" z="-0.693371356" />
+            <Up x="0.640381336" y="-0.7655544" z="-0.06195213" />
             <Orientation>
-              <X>0.111750811</X>
-              <Y>-0.0212683</Y>
-              <Z>0.5756848</Z>
-              <W>0.80972</W>
+              <X>0.376800954</X>
+              <Y>0.106467605</Y>
+              <Z>0.8606964</Z>
+              <W>-0.325403452</W>
             </Orientation>
           </PositionAndOrientation>
           <LocalPositionAndOrientation xsi:nil="true" />
@@ -25,9 +25,8 @@
           <CubeBlocks>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Cockpit">
               <SubtypeName>PassengerSeatSmallNew</SubtypeName>
-              <EntityId>103067125420543125</EntityId>
-              <Min x="-3" y="2" z="-3" />
-              <BlockOrientation Forward="Left" Up="Up" />
+              <EntityId>81250513745688157</EntityId>
+              <Min x="-1" y="-1" z="0" />
               <ColorMaskHSV x="0" y="-0.8" z="0" />
               <SkinSubtypeId>Weldless</SkinSubtypeId>
               <ComponentContainer>
@@ -76,14 +75,14 @@
               </OnLockedToolbar>
               <IsTargetLockingEnabled>false</IsTargetLockingEnabled>
               <PilotRelativeWorld>
-                <Position x="0.14115768671035767" y="-0.63406962156295776" z="-1.4549493789672852" />
-                <Forward x="-0.137974575" y="-0.5047027" z="0.852196038" />
-                <Up x="-0.0112167737" y="0.861166537" z="0.5081993" />
+                <Position x="3.9340043067932129" y="-1.3502840995788574" z="3.1315762996673584" />
+                <Forward x="-0.7835657" y="-0.148767278" z="-0.603235543" />
+                <Up x="-0.108673006" y="0.988759935" z="-0.102684066" />
                 <Orientation>
-                  <X>0.0128196115</X>
-                  <Y>0.962254465</Y>
-                  <Z>0.26315856</Z>
-                  <W>0.0681874752</W>
+                  <X>-0.0702419</X>
+                  <Y>0.439827621</Y>
+                  <Z>0.0261939056</Z>
+                  <W>0.8949478</W>
                 </Orientation>
               </PilotRelativeWorld>
               <PilotGunDefinition xsi:nil="true" />
@@ -95,15 +94,47 @@
                 <IsTargetLocked>false</IsTargetLocked>
                 <LockingProgress>0</LockingProgress>
               </TargetData>
-              <SitAnimation>685754</SitAnimation>
+              <SitAnimation>0</SitAnimation>
             </MyObjectBuilder_CubeBlock>
-            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
-              <SubtypeName>SmallBlockRocket</SubtypeName>
-              <EntityId>83742877624467447</EntityId>
-              <Min x="-2" y="1" z="-2" />
-              <BlockOrientation Forward="Down" Up="Forward" />
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>HalfArmorBlock</SubtypeName>
+              <Min x="0" y="-2" z="1" />
+              <BlockOrientation Forward="Up" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="0" />
               <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Tip</SubtypeName>
+              <Min x="0" y="-2" z="0" />
+              <BlockOrientation Forward="Backward" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.8" z="0" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
+              <SubtypeName>SmallBlockSmallBatteryBlock</SubtypeName>
+              <EntityId>130648125342866856</EntityId>
+              <Min x="0" y="1" z="2" />
+              <ColorMaskHSV x="0" y="-0.8" z="0" />
+              <ShareMode>Faction</ShareMode>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>true</Enabled>
+              <CurrentStoredPower>0.01498974</CurrentStoredPower>
+              <ProducerEnabled>true</ProducerEnabled>
+              <MaxStoredPower>0</MaxStoredPower>
+              <SemiautoEnabled>false</SemiautoEnabled>
+              <OnlyDischargeEnabled>false</OnlyDischargeEnabled>
+              <ChargeMode>0</ChargeMode>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>SmallEjectorSeatRocket</SubtypeName>
+              <EntityId>115755420306868952</EntityId>
+              <Min x="0" y="-2" z="2" />
+              <BlockOrientation Forward="Down" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.8" z="0" />
               <ComponentContainer>
                 <Components>
                   <ComponentData>
@@ -112,7 +143,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -122,33 +153,16 @@
                   </ComponentData>
                 </Components>
               </ComponentContainer>
-              <CustomName>Small Rocket</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
               <ShowInInventory>true</ShowInInventory>
-              <NumberInGrid>2</NumberInGrid>
-              <Enabled>true</Enabled>
-            </MyObjectBuilder_CubeBlock>
-            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
-              <SubtypeName>HalfArmorBlock</SubtypeName>
-              <Min x="-3" y="1" z="-2" />
-              <BlockOrientation Forward="Up" Up="Backward" />
-              <ColorMaskHSV x="0" y="-0.8" z="0" />
-              <SkinSubtypeId>Weldless</SkinSubtypeId>
-            </MyObjectBuilder_CubeBlock>
-            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
-              <SubtypeName>SmallBlockArmorSlope2Tip</SubtypeName>
-              <Min x="-4" y="1" z="-2" />
-              <BlockOrientation Forward="Right" Up="Down" />
-              <ColorMaskHSV x="0" y="-0.8" z="0" />
-              <SkinSubtypeId>Weldless</SkinSubtypeId>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>false</Enabled>
             </MyObjectBuilder_CubeBlock>
           </CubeBlocks>
-          <LinearVelocity x="-0.000633514253" y="0.000173050445" z="-0.00216087885" />
-          <AngularVelocity x="-0.00298982929" y="-0.00253050961" z="0.001212934" />
-          <DampenersEnabled>false</DampenersEnabled>
-          <DisplayName>Ejector Seat</DisplayName>
+		  <DampenersEnabled>false</DampenersEnabled>
+		  <DisplayName>(A) Test Seat 3</DisplayName>
           <DestructibleBlocks>true</DestructibleBlocks>
           <CreatePhysics>false</CreatePhysics>
           <EnableSmallToLargeConnections>false</EnableSmallToLargeConnections>

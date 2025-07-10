@@ -8,7 +8,7 @@
             </Id>
             <DisplayName>Ejector Controller</DisplayName>
             <Icon>Textures\GUI\Icons\EjectorController.dds</Icon>
-            <Description>Ejector Seat combibed controller and powersource.</Description>
+            <Description>Ejector Seat combined controller and power source.</Description>
             <CubeSize>Small</CubeSize>
             <GuiVisible>false</GuiVisible>
             <BlockTopology>TriangleMesh</BlockTopology>
@@ -43,7 +43,7 @@
 
             <ResourceSinkGroup>BatteryBlock</ResourceSinkGroup>
             <RequiredPowerInput>0.001</RequiredPowerInput>
-            <MaxStoredPower>0.001</MaxStoredPower>
+            <MaxStoredPower>0.01</MaxStoredPower>
             <InitialStoredPowerRatio>0.01</InitialStoredPowerRatio>
             <RechargeMultiplier>0.8</RechargeMultiplier>
 
