@@ -2,6 +2,7 @@
 using Sandbox.Game.Entities;
 using Sandbox.Game.GameSystems;
 using Sandbox.ModAPI;
+using System;
 using VRage.Game.Components;
 using VRage.ModAPI;
 using VRage.ObjectBuilders;
@@ -12,25 +13,24 @@ namespace HardStart
     [MyEntityComponentDescriptor(typeof(MyObjectBuilder_Thrust), false, new[] { "SmallEjectorSeatRocket" })]
     internal class RocketBlock : MyGameLogicComponent
     {
-        const double startHeight = 200;
-        const double stopHeight = 2;
+        const float startHeight = 200;
+        const float stopHeight = 2;
         const float targetSpeedHigh = 5f;
         const float targetSpeedLow = 1.0f;
-        const double speedChangeHeight = 10;
+        const float speedChangeHeight = 5;
+        const float rotationSpeed = 0.01f;
 
         private IMyThrust block;
         private MyCubeGrid grid;
-        private float rotationSpeed = 0.1f; //0.05f;
         private float targetSpeed = targetSpeedHigh;
         private MyPlanet closestPlanet;
         private double height;
         private bool active;
-        private Vector3 up;
         private Quaternion to;
         private Quaternion from;
         private bool landed = false;
-        private Vector3 gravity;
         private float decreaseStep;
+        private float targetSpeedSlope;
 
         public override void Init(MyObjectBuilder_EntityBase objectBuilder)
         {
@@ -58,9 +58,12 @@ namespace HardStart
             block.Enabled = true;
             //Log.Msg($"Start height={height} override={block.ThrustOverridePercentage} currentThrust={block.CurrentThrust}  dampeners={grid.DampenersEnabled}");
 
-            gravity = grid.NaturalGravity;
+            var gravityUp = Vector3.Normalize(-grid.NaturalGravity);
 
-            Log.Msg($"Gravity={gravity.Length()}");
+            Log.Msg($"Gravity={gravityUp.Length()}");
+
+            to = Quaternion.CreateFromForwardUp(grid.WorldMatrix.Forward, gravityUp); // use gravity to allow for testing by pasting
+            to.Normalize();
 
             NeedsUpdate |= MyEntityUpdateEnum.EACH_FRAME;
             NeedsUpdate |= MyEntityUpdateEnum.EACH_10TH_FRAME;
@@ -72,11 +75,11 @@ namespace HardStart
             if (block?.CubeGrid?.Physics == null) // ignore projected and other non-physical grids
                 return;
             if (active && grid.Physics.Speed > 0.1)
-            {
-                up = -gravity;           
+            {  
                 from = Quaternion.CreateFromForwardUp(grid.WorldMatrix.Forward, grid.WorldMatrix.Up);
+                from.Normalize();
 
-                var newMatrix = MatrixD.CreateFromQuaternion( Quaternion.Slerp(from, from * Quaternion.CreateFromTwoVectors(grid.WorldMatrix.Up, up), rotationSpeed));
+                var newMatrix = MatrixD.CreateFromQuaternion(Quaternion.Slerp(from, to, rotationSpeed));
                 newMatrix.Translation = grid.WorldMatrix.Translation;
 
                 grid.WorldMatrix = newMatrix;
@@ -109,12 +112,18 @@ namespace HardStart
                 if (height < speedChangeHeight)
                 {
                     targetSpeed = targetSpeedLow;
+                } else
+                {
+                    targetSpeed = (float)((height- speedChangeHeight) * targetSpeedSlope);
+                    targetSpeed = Math.Max(targetSpeed, targetSpeedLow);
                 }
             }
             else
             {
                 block.ThrustOverridePercentage = 0;
                 decreaseStep = grid.Physics.Speed / 150;
+                targetSpeedSlope =  (grid.Physics.Speed- targetSpeedLow)/(startHeight-speedChangeHeight);
+                Log.Msg($"targetSpeedSlope={targetSpeedSlope}");
             }
 
             if (height < stopHeight || grid.Physics.Speed < 0.05)
