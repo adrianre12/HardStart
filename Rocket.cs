@@ -78,6 +78,7 @@ namespace HardStart
 
                 var speed = grid.Physics.Speed;
                 var multiplier = targetSpeed / speed;
+                Log.Msg($"speed={speed} multiplier={multiplier}");
 
                 if (speed - decreaseStep > targetSpeed)
                     multiplier = (speed - decreaseStep) / speed;
@@ -106,11 +107,11 @@ namespace HardStart
 
             if (height < 1 || grid.Physics.Speed < 0.05)
             {
-               // Log.Msg($"Landed height={height} speed={grid.Physics.Speed}");
+                Log.Msg($"Landed height={height} speed={grid.Physics.Speed}");
                 landed = true;
                 block.Enabled = false;
             }
-            //Log.Msg($"height={height} active={active} speed={grid.Physics.Speed} override={block.ThrustOverridePercentage} currentThrust={block.CurrentThrust} dampners={grid.DampenersEnabled}");
+            Log.Msg($"height={height} active={active} speed={grid.Physics.Speed} override={block.ThrustOverridePercentage} currentThrust={block.CurrentThrust} dampners={grid.DampenersEnabled}");
             
         }
     }
