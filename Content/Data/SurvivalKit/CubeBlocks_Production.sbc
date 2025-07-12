@@ -8,30 +8,27 @@
             </Id>
             <DisplayName>Emergency Survival Kit</DisplayName>
             <Description>A small low power Survival Kit that can be reused.</Description>
-			<Icon>Textures\GUI\Icons\Cubes\ProgrammableBlockReskin.dds</Icon>
+			<Icon>Textures\GUI\Icons\Cubes\EmergencySK.dds</Icon>
 			<CubeSize>Small</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
-			<Size x="1" y="1" z="1" />
+			<Size x="2" y="1" z="3" />
 			<ModelOffset x="0" y="0" z="0" />
-			<Model>Models\Cubes\small\EmergencySurvivalKit.mwm</Model>
+			<Model>Models\Cubes\small\EmergencySK.mwm</Model>
 			<Components>
 				<Component Subtype="Computer" Count="1" />
 				<Component Subtype="EmergencySurvivalKitKit" Count="1" />
             </Components>
             <CriticalComponent Subtype="Computer" Index="0" />
             <MountPoints>
-				<MountPoint Side="Bottom" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9" Default="true" />
-				<MountPoint Side="Left" StartX="0.1" StartY="0" EndX="0.7" EndY="0.9" />
-				<MountPoint Side="Front" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9" />
-				<MountPoint Side="Back" StartX="0.2" StartY="0" EndX="0.8" EndY="0.1" />
-				<MountPoint Side="Right" StartX="0.3" StartY="0" EndX="0.9" EndY="0.9" />
-				<MountPoint Side="Top" StartX="0.1" StartY="0.3" EndX="0.9" EndY="1" />
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Top" StartX="1.00" StartY="0.00" EndX="2.00" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="1.00" EndX="1.00" EndY="2.00"/>
 			</MountPoints>
-			<MirroringZ>Y</MirroringZ>
-			<MirroringY>Z</MirroringY>
+<!--			<MirroringZ>Y</MirroringZ>
+			<MirroringY>Z</MirroringY> -->
 			<BuildProgressModels>
-				<Model BuildPercentUpperBound="0.50" File="Models\Cubes\small\EmergencySurvivalKit_BS1.mwm"/>
-				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\EmergencySurvivalKit_BS2.mwm"/>
+				<Model BuildPercentUpperBound="0.50" File="Models\Cubes\small\EmergencySK_BS1.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\EmergencySK_BS2.mwm"/>
 			</BuildProgressModels>
             <BlockPairName>EmergencySurvivalKit</BlockPairName>
             <EdgeType>Light</EdgeType>
@@ -47,8 +44,7 @@
             </BlueprintClasses>
             <AssemblySpeed>0.3</AssemblySpeed>
 			<ScreenAreas>
-				<ScreenArea Name="CockpitScreen_01" DisplayName="DisplayName_Screen_Large" TextureResolution="256" ScreenWidth="10" ScreenHeight="7" />
-				<ScreenArea Name="CockpitScreen_02" DisplayName="DisplayName_Screen_Keyboard" TextureResolution="128" ScreenWidth="11" ScreenHeight="4" />
+				<ScreenArea Name="CockpitScreen_01" DisplayName="Terminal" />
 			</ScreenAreas>
             <StandbyPowerConsumption>0.0015</StandbyPowerConsumption>
             <OperationalPowerConsumption>0.029</OperationalPowerConsumption>
