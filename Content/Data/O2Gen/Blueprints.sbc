@@ -24,7 +24,7 @@
 			<DisplayName>DisplayName_Item_Oxygen</DisplayName>
 			<Icon>Textures\GUI\Icons\ingot\gravel_ingot.dds</Icon>
 			<Prerequisites>
-				<Item Amount="1" TypeId="Ingot" SubtypeId="StoneDust" />
+				<Item Amount="1" TypeId="Ore" SubtypeId="StoneDust" />
 			</Prerequisites>
 			<Result Amount="0.9" TypeId="Ingot" SubtypeId="Stone" />
 			<BaseProductionTimeInSeconds>0.1</BaseProductionTimeInSeconds>

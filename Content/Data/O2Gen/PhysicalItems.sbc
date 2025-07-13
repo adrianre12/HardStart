@@ -3,7 +3,7 @@
     <PhysicalItems>
         <PhysicalItem>
             <Id>
-                <TypeId>Ingot</TypeId>
+                <TypeId>Ore</TypeId>
                 <SubtypeId>StoneDust</SubtypeId>
             </Id>
             <DisplayName>Stone Dust</DisplayName>
@@ -16,7 +16,7 @@
             <Mass>1</Mass>
             <Volume>0.10</Volume>
             <Model>Models\Ingots\stone_ingot.mwm</Model>
-            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <PhysicalMaterial>Stone</PhysicalMaterial>
             <IconSymbol>Dust</IconSymbol>
             <CanPlayerOrder>false</CanPlayerOrder>
         </PhysicalItem>

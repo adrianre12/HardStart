@@ -12,7 +12,7 @@
 				<Item Amount="110" TypeId="Ore" SubtypeId="Stone" />
 			</Prerequisites>
 			<Results>
-				<Item Amount="15.4" TypeId="Ingot" SubtypeId="StoneDust" />
+				<Item Amount="15.4" TypeId="Ore" SubtypeId="StoneDust" />
 				<Item Amount="3.3" TypeId="Ingot" SubtypeId="Iron" />
 				<Item Amount="0.26" TypeId="Ingot" SubtypeId="Nickel" />
 				<Item Amount="0.48" TypeId="Ingot" SubtypeId="Silicon" />
