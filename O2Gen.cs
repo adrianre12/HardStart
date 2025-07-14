@@ -84,8 +84,6 @@ namespace HardStart
                 }
             }
 
-            targetState = true;
-
             if (targetState != currentState)
             {
                 if(targetState)
