@@ -16,8 +16,7 @@
             <BlockTopology>TriangleMesh</BlockTopology>
             <Size x="1" y="1" z="1" />
             <ModelOffset x="0" y="0" z="0" />
-<!--            <Model>Models\Cubes\Small\VirtualMassBlock.mwm</Model>-->
-			<Model>Models\Cubes\small\EmergencySurvivalKit.mwm</Model>
+			<Model>Models\Cubes\Small\VirtualMassBlock.mwm</Model>
 
 			<Components>
                 <Component Subtype="SteelPlate" Count="1" />

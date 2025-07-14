@@ -9,11 +9,11 @@
 				<SubtypeId>EmergencyOxygenGeneratorSmall</SubtypeId>
 			</Id>
 			<DisplayName>Emergency Oxygen Generator</DisplayName>
-			<Icon>Textures\GUI\Icons\Cubes\OxygenGeneratorSmall.dds</Icon>
+			<Icon>Textures\GUI\Icons\Cubes\EmergencyO2Gen.dds</Icon>
 			<Description>A small low power Pyrolytic gas extractor that can be reused. Requires Stone Dust</Description>
 			<CubeSize>Small</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
-			<Size x="1" y="1" z="2" />
+			<Size x="1" y="2" z="1" />
 			<ModelOffset x="0" y="0" z="0" />
 			<Model>Models\Cubes\small\EmergencyO2Gen.mwm</Model>
 			<SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
@@ -23,11 +23,11 @@
 			</Components>
 			<CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
-				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
 			</MountPoints>
 			<BuildProgressModels>
-				<Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\CargoContainerSmallConstruction_1.mwm" />
-				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\CargoContainerSmallConstruction_2.mwm" />
+				<Model BuildPercentUpperBound="0.50" File="Models\Cubes\small\EmergencyO2Gen_BS1.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\EmergencyO2Gen_BS2.mwm"/>
 			</BuildProgressModels>
 			<BuildTimeSeconds>14</BuildTimeSeconds>
 			<EdgeType>Light</EdgeType>

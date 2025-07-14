@@ -41,7 +41,6 @@ namespace HardStart
             grid = block.CubeGrid as MyCubeGrid;
 
             NeedsUpdate = MyEntityUpdateEnum.BEFORE_NEXT_FRAME;
-
         }
 
         public override void UpdateOnceBeforeFrame()
