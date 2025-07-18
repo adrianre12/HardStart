@@ -33,16 +33,17 @@
 		<Blueprint>
 			<Id>
 				<TypeId>BlueprintDefinition</TypeId>
-				<SubtypeId>TritiumCell</SubtypeId>
+				<SubtypeId>EmergencyTritiumCell</SubtypeId>
 			</Id>
-			<DisplayName>Tritium Cell</DisplayName>
-			<Icon>Textures\GUI\Icons\Components\construction_restricted.dds</Icon>
+			<DisplayName>Emergency Tritium Cell</DisplayName>
+			<Icon>Textures\GUI\Icons\Components\EmergencyTritiumCell.dds</Icon>
 			<Prerequisites>
 				<Item Amount="1" TypeId="Ingot" SubtypeId="Iron" />
 			</Prerequisites>
-			<Result Amount="1" TypeId="Component" SubtypeId="TritiumCell" />
+			<Result Amount="1" TypeId="Component" SubtypeId="EmergencyTritiumCell" />
 			<BaseProductionTimeInSeconds>1</BaseProductionTimeInSeconds>
 			<IsPrimary>true</IsPrimary>
 		</Blueprint>
+
      </Blueprints>
 </Definitions>

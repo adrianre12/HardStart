@@ -59,7 +59,7 @@ namespace HardStart
 
             var gravityUp = Vector3.Normalize(-grid.NaturalGravity);
 
-            Log.Msg($"Gravity={gravityUp.Length()}");
+            Log.Msg($"Gravity={gravityUp.Length()} vector={gravityUp}");
 
             to = Quaternion.CreateFromForwardUp(grid.WorldMatrix.Forward, gravityUp); // use gravity to allow for testing by pasting
             to.Normalize();

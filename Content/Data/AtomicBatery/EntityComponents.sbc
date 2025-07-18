@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<EntityComponents>
+		<EntityComponent xsi:type="MyObjectBuilder_MaintenancePanelComponentDefinition">
+			<Id>
+				<TypeId>MaintenancePanelComponent</TypeId>
+				<SubtypeId>EmergencySmallGenerator1</SubtypeId>
+			</Id>
+			<SimpleOpen>false</SimpleOpen>
+			<OpenDirection>1</OpenDirection>
+			<OpenSpeed>3</OpenSpeed>
+			<CloseSpeed>3</CloseSpeed>
+			<SpinUpSpeed>3</SpinUpSpeed>
+			<MinPosition>0</MinPosition>
+			<MaxPosition>90</MaxPosition>
+			<UseobjectHingePosition>
+				<X>-0.13</X>
+				<Y>-0.2</Y>
+				<Z>-0.15</Z>
+			</UseobjectHingePosition>
+			<DetectorName>detector_maintenance_1</DetectorName>
+			<SubpartName>EAtomicBatterySubpart1</SubpartName>
+			<DefaultOpeningDirectionRevert>true</DefaultOpeningDirectionRevert>
+		</EntityComponent>
+	</EntityComponents>
+</Definitions>

@@ -8,13 +8,13 @@
                 <SubtypeId>EmergencySmallGenerator</SubtypeId>
             </Id>
             <DisplayName>Emergency Atomic Battery</DisplayName>
-            <Icon>Textures\GUI\Icons\Cubes\nuclear_reactor.dds</Icon>
+            <Icon>Textures\GUI\Icons\Cubes\EAtomicBattery.dds</Icon>
             <Description>A low power but long lived Betavoltaic power source that can be reused. Requires a Tritium Cell to function. </Description>
             <CubeSize>Small</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="1" y="1" z="1" />
-            <ModelOffset x="0" y="0" z="0" />
-            <Model>Models\Cubes\Small\GeneratorSmall.mwm</Model>
+			<Size x="1" y="2" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\EAtomicBattery.mwm</Model>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
 			<Components>
 				<Component Subtype="Computer" Count="1" />
@@ -22,13 +22,8 @@
 			</Components>
             <CriticalComponent Subtype="Computer" Index="0" />
             <MountPoints>
-                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
-                <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
-                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
-                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
-                <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
-                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
-            </MountPoints>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			</MountPoints>
             <BuildProgressModels>
                 <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\GeneratorSmallConstruction_1.mwm" />
                 <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\GeneratorSmallConstruction_2.mwm" />
@@ -68,7 +63,7 @@
                 <FuelInfo>
                     <Id>
                         <TypeId>Component</TypeId>
-                        <SubtypeId>TritiumCell</SubtypeId>
+                        <SubtypeId>EmergencyTritiumCell</SubtypeId>
                     </Id>
 					<Ratio>0.1</Ratio>
                 </FuelInfo>
