@@ -50,16 +50,28 @@ namespace HardStart
             if (block?.CubeGrid?.Physics == null) // ignore projected and other non-physical grids
                 return;
 
-            Log.Msg($"UpdateOnceBeforeFrame {block.CubeGrid.DisplayName}");
+            //Log.Msg($"UpdateOnceBeforeFrame {block.CubeGrid.DisplayName}");
             closestPlanet = MyGamePruningStructure.GetClosestPlanet(grid.WorldMatrix.Translation);
-            if (closestPlanet != null)
-                height = closestPlanet.GetHeightFromSurface(grid.WorldMatrix.Translation);
-            block.Enabled = true;
-            //Log.Msg($"Start height={height} override={block.ThrustOverridePercentage} currentThrust={block.CurrentThrust}  dampeners={grid.DampenersEnabled}");
+            if (closestPlanet == null)
+            {
+                Log.Msg("No planet near, stopping.");
+                return;
+            }
+            height = closestPlanet.GetHeightFromSurface(grid.WorldMatrix.Translation);
 
             var gravityUp = Vector3.Normalize(-grid.NaturalGravity);
+            if (float.IsNaN(gravityUp.X))
+            {
+                Log.Msg("No gravity, stopping.");
+                return;
+            }
 
-            Log.Msg($"Gravity={gravityUp.Length()} vector={gravityUp}");
+            if (grid.DampenersEnabled)
+                Log.Msg("Warning: Dampeners are enabled");
+
+            block.Enabled = true;
+
+            //Log.Msg($"Gravity={gravityUp.Length()} vector={gravityUp}");
 
             to = Quaternion.CreateFromForwardUp(grid.WorldMatrix.Forward, gravityUp); // use gravity to allow for testing by pasting
             to.Normalize();
@@ -122,7 +134,7 @@ namespace HardStart
                 block.ThrustOverridePercentage = 0;
                 decreaseStep = grid.Physics.Speed / 150;
                 targetSpeedSlope =  (grid.Physics.Speed- targetSpeedLow)/(startHeight-speedChangeHeight);
-                Log.Msg($"targetSpeedSlope={targetSpeedSlope}");
+                //Log.Msg($"targetSpeedSlope={targetSpeedSlope}");
             }
 
             if (height < stopHeight || grid.Physics.Speed < 0.05)
@@ -131,7 +143,7 @@ namespace HardStart
                 landed = true;
                 block.Enabled = false;
             }
-            Log.Msg($"height={height} active={active} speed={grid.Physics.Speed} override={block.ThrustOverridePercentage} currentThrust={block.CurrentThrust} dampners={grid.DampenersEnabled}");
+            //Log.Msg($"height={height} active={active} speed={grid.Physics.Speed} override={block.ThrustOverridePercentage} currentThrust={block.CurrentThrust} dampners={grid.DampenersEnabled}");
             
         }
     }
