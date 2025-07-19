@@ -18,8 +18,9 @@
 			<Model>Models\Cubes\small\EmergencyO2Gen.mwm</Model>
 			<SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
 			<Components>
+				<Component Subtype="EmergencyOxygenGeneratorParts" Count="1" />
+				<Component Subtype="Construction" Count="10" />
 				<Component Subtype="Computer" Count="1" />
-				<Component Subtype="EmergencyOxygenGeneratorKit" Count="1" />
 			</Components>
 			<CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>

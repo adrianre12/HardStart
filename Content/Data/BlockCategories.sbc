@@ -1,17 +1,21 @@
 <?xml version="1.0"  encoding="utf-8"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <CategoryClasses>
-        <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition"> <!-- Large Blocks -->
+        <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition"> 
             <Id>
                 <TypeId>GuiBlockCategoryDefinition</TypeId>
                 <SubtypeId/>
             </Id>
-            <DisplayName>Admin</DisplayName>
-            <Name>Admin</Name>
+            <DisplayName>Emergency Survival</DisplayName>
+            <Name>A_HardStart</Name>
 			<StrictSearch>true</StrictSearch>
             <ItemIds>
-                <string>VirtualMass/TestBlockSmall</string>
-            </ItemIds>
+                <string>SurvivalKit/EmergencySurvivalKit</string>
+				<string>OxygenGenerator/EmergencyOxygenGeneratorSmall</string>
+				<string>Reactor/EmergencySmallGenerator</string>
+				<string>Thrust/SmallEjectorSeatRocket</string>
+				<string>BatteryBlock/EjectorController</string>
+			</ItemIds>
         </Category>
     </CategoryClasses>
 </Definitions>

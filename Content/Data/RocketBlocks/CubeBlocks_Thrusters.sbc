@@ -18,14 +18,12 @@
 			<ThrusterType>Hydrogen</ThrusterType>
 			<SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
 			<Components>
-				<Component Subtype="SteelPlate" Count="2" />
-				<Component Subtype="Construction" Count="10" />
-				<Component Subtype="MetalGrid" Count="4" />
-				<Component Subtype="LargeTube" Count="2" />
-				<Component Subtype="Construction" Count="5" />
-				<Component Subtype="SteelPlate" Count="5" />
+				<Component Subtype="EmergencyAtomicGeneratorParts" Count="1" />
+				<Component Subtype="EmergencyOxygenGeneratorParts" Count="1" />
+				<Component Subtype="EmergencySurvivalKitParts" Count="1" />
+				<Component Subtype="Computer" Count="1" />
 			</Components>
-			<CriticalComponent Subtype="LargeTube" Index="0" />
+			<CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
 				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
 				<MountPoint Side="Bottom" StartX="0.00" StartY="1.00" EndX="1.00" EndY="2.00"/>

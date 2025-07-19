@@ -33,14 +33,14 @@
 		<Blueprint>
 			<Id>
 				<TypeId>BlueprintDefinition</TypeId>
-				<SubtypeId>EmergencyOxygenGeneratorKit</SubtypeId>
+				<SubtypeId>EmergencyOxygenGeneratorParts</SubtypeId>
 			</Id>
-			<DisplayName>Emergency Oxygen Generator Kit</DisplayName>
+			<DisplayName>Emergency Oxygen Generator Parts</DisplayName>
 			<Icon>Textures\GUI\Icons\Components\construction_restricted.dds</Icon>
 			<Prerequisites>
 				<Item Amount="1" TypeId="Ingot" SubtypeId="Iron" />
 			</Prerequisites>
-			<Result Amount="1" TypeId="Component" SubtypeId="EmergencyOxygenGeneratorKit" />
+			<Result Amount="1" TypeId="Component" SubtypeId="EmergencyOxygenGeneratorParts" />
 			<BaseProductionTimeInSeconds>1</BaseProductionTimeInSeconds>
 			<IsPrimary>true</IsPrimary>
 		</Blueprint>

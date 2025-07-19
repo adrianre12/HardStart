@@ -17,8 +17,9 @@
 			<Model>Models\Cubes\small\EAtomicBattery.mwm</Model>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
 			<Components>
+				<Component Subtype="EmergencyAtomicGeneratorParts" Count="1" />
+				<Component Subtype="InteriorPlate" Count="10" />
 				<Component Subtype="Computer" Count="1" />
-				<Component Subtype="EmergencySmallGeneratorKit" Count="1" />
 			</Components>
             <CriticalComponent Subtype="Computer" Index="0" />
             <MountPoints>
