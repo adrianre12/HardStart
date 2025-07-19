@@ -25,8 +25,8 @@
 				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
 			</MountPoints>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\GeneratorSmallConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\GeneratorSmallConstruction_2.mwm" />
+				<Model BuildPercentUpperBound="0.50" File="Models\Cubes\small\EAtomicBattery_BS1.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\EAtomicBattery_BS2.mwm"/>
             </BuildProgressModels>
             <BlockPairName>EmergencyReactor</BlockPairName>
             <MirroringY>Z</MirroringY>
