@@ -400,5 +400,5 @@ FodyWeavers.xsd
 # SE mod files
 metadata.mod
 modinfo.sbmi
-Blender/
 Content/Data/CubeBlocks/
+Blender/**/*.blend[0-9]
