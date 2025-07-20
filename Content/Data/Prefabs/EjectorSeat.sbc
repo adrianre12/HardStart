@@ -6,16 +6,16 @@
       <CubeGrids>
         <CubeGrid>
           <SubtypeName />
-          <EntityId>138358901959101217</EntityId>
+          <EntityId>79319443795872552</EntityId>
           <PersistentFlags>CastShadows InScene</PersistentFlags>
-          <Name>138358901959101217</Name>
+          <Name>79319443795872552</Name>
           <PositionAndOrientation>
             <Position x="0" y="0" z="0" />
-            <Forward x="-0.5793326" y="-0.4284972" z="-0.693371356" />
-            <Up x="0.6403814" y="-0.7655544" z="-0.06195223" />
+            <Forward x="-0.5793326" y="-0.428497136" z="-0.6933715" />
+            <Up x="0.640381336" y="-0.7655543" z="-0.06195225" />
             <Orientation>
-              <X>0.376800954</X>
-              <Y>0.10646756</Y>
+              <X>0.376800925</X>
+              <Y>0.106467523</Y>
               <Z>0.8606964</Z>
               <W>-0.3254035</W>
             </Orientation>
@@ -25,7 +25,7 @@
           <CubeBlocks>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Cockpit">
               <SubtypeName>PassengerSeatSmallNew</SubtypeName>
-              <EntityId>74043141849438039</EntityId>
+              <EntityId>112487900560814457</EntityId>
               <Min x="-1" y="-1" z="0" />
               <ColorMaskHSV x="0" y="-0.8" z="0" />
               <SkinSubtypeId>Weldless</SkinSubtypeId>
@@ -35,8 +35,33 @@
                     <TypeId>MyInventoryBase</TypeId>
                     <Component xsi:type="MyObjectBuilder_Inventory">
                       <CanPutItems>true</CanPutItems>
-                      <Items />
-                      <nextItemId>0</nextItemId>
+                      <Items>
+                        <MyObjectBuilder_InventoryItem>
+                          <Amount>1</Amount>
+                          <PhysicalContent xsi:type="MyObjectBuilder_Component">
+                            <SubtypeName>EmergencyTritiumCell</SubtypeName>
+                          </PhysicalContent>
+                          <ItemId>0</ItemId>
+                        </MyObjectBuilder_InventoryItem>
+                        <MyObjectBuilder_InventoryItem>
+                          <Amount>1</Amount>
+                          <PhysicalContent xsi:type="MyObjectBuilder_Datapad">
+                            <SubtypeName>Datapad</SubtypeName>
+                            <Name>Ejector Seat Mk I</Name>
+                            <Data>The fact that you are reading this means you have survived. Congratulations!
+Your survival should not be taken as any indication that you will continue to do so.
+While all effort has been made to manufacture this ejector seat to the highest quality, stringent requirements had to be met, which are;
+* Lowest cost possible.
+* At most 73% survival rate.
+* Keep the profits high.
+
+To meet these requirements, certain design choices had to be made; possibly the most apparent is the lack of any normal life support equipment or supplies.
+However, some effort has been made for your future survival; you will find it is possible to construct a set of survival equipment from the ejector seat components. Unfortunately, these are of limited performance but should suffice to keep you alive for a suitable period.</Data>
+                          </PhysicalContent>
+                          <ItemId>1</ItemId>
+                        </MyObjectBuilder_InventoryItem>
+                      </Items>
+                      <nextItemId>2</nextItemId>
                       <Volume>1</Volume>
                       <Mass>9223372036854.775807</Mass>
                       <MaxItemCount>2147483647</MaxItemCount>
@@ -75,18 +100,18 @@
               </OnLockedToolbar>
               <IsTargetLockingEnabled>false</IsTargetLockingEnabled>
               <PilotRelativeWorld>
-                <Position x="-2.2580654621124268" y="-1.0157637596130371" z="0.016367623582482338" />
-                <Forward x="0.9329611" y="-0.248694032" z="0.260259569" />
-                <Up x="0.285829127" y="0.951280951" z="-0.115613624" />
+                <Position x="0.031155291944742203" y="-0.8723442554473877" z="-2.6821930408477783" />
+                <Forward x="0.0251227748" y="-0.31208533" z="0.9497216" />
+                <Up x="-0.0680992454" y="0.947280347" z="0.313084573" />
                 <Orientation>
-                  <X>-0.150125951</X>
-                  <Y>-0.7794819</Y>
-                  <Z>-0.0426823273</Z>
-                  <W>0.606669962</W>
+                  <X>-0.035633713</X>
+                  <Y>0.9867072</Y>
+                  <Z>0.158398062</Z>
+                  <W>-0.00701026525</W>
                 </Orientation>
               </PilotRelativeWorld>
               <PilotGunDefinition xsi:nil="true" />
-              <IsInFirstPersonView>false</IsInFirstPersonView>
+              <IsInFirstPersonView>true</IsInFirstPersonView>
               <OxygenLevel>0</OxygenLevel>
               <PilotJetpackEnabled xsi:nil="true" />
               <TargetData>
@@ -94,7 +119,7 @@
                 <IsTargetLocked>false</IsTargetLocked>
                 <LockingProgress>0</LockingProgress>
               </TargetData>
-              <SitAnimation>480895</SitAnimation>
+              <SitAnimation>372636</SitAnimation>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>HalfArmorBlock</SubtypeName>
@@ -112,7 +137,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>EjectorController</SubtypeName>
-              <EntityId>110399198733280693</EntityId>
+              <EntityId>83355141534206053</EntityId>
               <Min x="0" y="1" z="2" />
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="0" />
@@ -122,7 +147,7 @@
               <ShowInInventory>true</ShowInInventory>
               <NumberInGrid>1</NumberInGrid>
               <Enabled>true</Enabled>
-              <CurrentStoredPower>1E-04</CurrentStoredPower>
+              <CurrentStoredPower>9.15736455E-05</CurrentStoredPower>
               <ProducerEnabled>true</ProducerEnabled>
               <MaxStoredPower>0</MaxStoredPower>
               <SemiautoEnabled>false</SemiautoEnabled>
@@ -131,7 +156,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallEjectorSeatRocket</SubtypeName>
-              <EntityId>106092288341769967</EntityId>
+              <EntityId>89333515733445608</EntityId>
               <Min x="0" y="-2" z="2" />
               <BlockOrientation Forward="Down" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="0" />
@@ -162,7 +187,7 @@
             </MyObjectBuilder_CubeBlock>
           </CubeBlocks>
 		  <DampenersEnabled>false</DampenersEnabled>
-          <DisplayName>EjectorSeat</DisplayName>
+		  <DisplayName>EjectorSeat</DisplayName>
           <DestructibleBlocks>true</DestructibleBlocks>
           <CreatePhysics>false</CreatePhysics>
           <EnableSmallToLargeConnections>false</EnableSmallToLargeConnections>
