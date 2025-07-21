@@ -22,11 +22,8 @@
     <AdditionalFiles Include="Content\*\**\*">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </AdditionalFiles>
-    <AdditionalFiles Include="thumb.png" Condition="Exists('thumb.png')">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </AdditionalFiles>
     <AdditionalFiles Remove="Content\*\**\*.cs" />
-    <None Remove="thumb.png" />
+	<AdditionalFiles Include="thumb.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\Models\" />
