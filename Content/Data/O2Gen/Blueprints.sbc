@@ -38,7 +38,7 @@
 			<DisplayName>Emergency Oxygen Generator Parts</DisplayName>
 			<Icon>Textures\GUI\Icons\Components\construction_restricted.dds</Icon>
 			<Prerequisites>
-				<Item Amount="1" TypeId="Ingot" SubtypeId="Iron" />
+				<Item Amount="10" TypeId="Ingot" SubtypeId="Iron" />
 			</Prerequisites>
 			<Result Amount="1" TypeId="Component" SubtypeId="EmergencyOxygenGeneratorParts" />
 			<BaseProductionTimeInSeconds>1</BaseProductionTimeInSeconds>
