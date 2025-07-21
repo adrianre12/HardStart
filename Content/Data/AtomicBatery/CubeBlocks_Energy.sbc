@@ -66,7 +66,7 @@
                         <TypeId>Component</TypeId>
                         <SubtypeId>EmergencyTritiumCell</SubtypeId>
                     </Id>
-					<Ratio>0.1</Ratio>
+					<Ratio>50</Ratio>
                 </FuelInfo>
             </FuelInfos>
 
