@@ -18,7 +18,6 @@
 				<Component Subtype="EmergencySurvivalKitParts" Count="2" />
 				<Component Subtype="SteelPlate" Count="2" />
 				<Component Subtype="InteriorPlate" Count="10" />
-				<Component Subtype="Construction" Count="10" />
 				<Component Subtype="Computer" Count="1" />
 			</Components>
             <CriticalComponent Subtype="Computer" Index="0" />

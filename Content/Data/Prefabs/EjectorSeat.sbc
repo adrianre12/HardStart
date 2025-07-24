@@ -6,29 +6,28 @@
       <CubeGrids>
         <CubeGrid>
           <SubtypeName />
-          <EntityId>79319443795872552</EntityId>
+          <EntityId>139995725848241844</EntityId>
           <PersistentFlags>CastShadows InScene</PersistentFlags>
-          <Name>79319443795872552</Name>
+          <Name>139995725848241844</Name>
           <PositionAndOrientation>
             <Position x="0" y="0" z="0" />
-            <Forward x="-0.5793326" y="-0.428497136" z="-0.6933715" />
-            <Up x="0.640381336" y="-0.7655543" z="-0.06195225" />
+            <Forward x="-0.5071804" y="-0.5531317" z="-0.660918534" />
+            <Up x="0.844627857" y="-0.471505642" z="-0.253547043" />
             <Orientation>
-              <X>0.376800925</X>
-              <Y>0.106467523</Y>
-              <Z>0.8606964</Z>
-              <W>-0.3254035</W>
+              <X>-0.399751544</X>
+              <Y>-0.0986885056</Y>
+              <Z>-0.7589147</Z>
+              <W>0.5044876</W>
             </Orientation>
           </PositionAndOrientation>
           <LocalPositionAndOrientation xsi:nil="true" />
           <GridSizeEnum>Small</GridSizeEnum>
           <CubeBlocks>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Cockpit">
-              <SubtypeName>PassengerSeatSmallNew</SubtypeName>
-              <EntityId>112487900560814457</EntityId>
+              <SubtypeName>EjectorSeat</SubtypeName>
+              <EntityId>128516465390186830</EntityId>
               <Min x="-1" y="-1" z="0" />
               <ColorMaskHSV x="0" y="-0.8" z="0" />
-              <SkinSubtypeId>Weldless</SkinSubtypeId>
               <ComponentContainer>
                 <Components>
                   <ComponentData>
@@ -100,18 +99,18 @@ However, some effort has been made for your future survival; you will find it is
               </OnLockedToolbar>
               <IsTargetLockingEnabled>false</IsTargetLockingEnabled>
               <PilotRelativeWorld>
-                <Position x="0.031155291944742203" y="-0.8723442554473877" z="-2.6821930408477783" />
-                <Forward x="0.0251227748" y="-0.31208533" z="0.9497216" />
-                <Up x="-0.0680992454" y="0.947280347" z="0.313084573" />
+                <Position x="-2.5073285102844238" y="-1.7902818918228149" z="-2.069692850112915" />
+                <Forward x="0.6540174" y="-0.0251672454" z="0.756061" />
+                <Up x="0.167185828" y="0.9795417" z="-0.112014964" />
                 <Orientation>
-                  <X>-0.035633713</X>
-                  <Y>0.9867072</Y>
-                  <Z>0.158398062</Z>
-                  <W>-0.00701026525</W>
+                  <X>0.09841934</X>
+                  <Y>0.931849837</Y>
+                  <Z>-0.0232997965</Z>
+                  <W>-0.348463327</W>
                 </Orientation>
               </PilotRelativeWorld>
               <PilotGunDefinition xsi:nil="true" />
-              <IsInFirstPersonView>true</IsInFirstPersonView>
+              <IsInFirstPersonView>false</IsInFirstPersonView>
               <OxygenLevel>0</OxygenLevel>
               <PilotJetpackEnabled xsi:nil="true" />
               <TargetData>
@@ -119,47 +118,15 @@ However, some effort has been made for your future survival; you will find it is
                 <IsTargetLocked>false</IsTargetLocked>
                 <LockingProgress>0</LockingProgress>
               </TargetData>
-              <SitAnimation>372636</SitAnimation>
-            </MyObjectBuilder_CubeBlock>
-            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
-              <SubtypeName>HalfArmorBlock</SubtypeName>
-              <Min x="0" y="-2" z="1" />
-              <BlockOrientation Forward="Up" Up="Backward" />
-              <ColorMaskHSV x="0" y="-0.8" z="0" />
-              <SkinSubtypeId>Weldless</SkinSubtypeId>
-            </MyObjectBuilder_CubeBlock>
-            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
-              <SubtypeName>SmallBlockArmorSlope2Tip</SubtypeName>
-              <Min x="0" y="-2" z="0" />
-              <BlockOrientation Forward="Backward" Up="Down" />
-              <ColorMaskHSV x="0" y="-0.8" z="0" />
-              <SkinSubtypeId>Weldless</SkinSubtypeId>
-            </MyObjectBuilder_CubeBlock>
-            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
-              <SubtypeName>EjectorController</SubtypeName>
-              <EntityId>83355141534206053</EntityId>
-              <Min x="0" y="1" z="2" />
-              <BlockOrientation Forward="Left" Up="Up" />
-              <ColorMaskHSV x="0" y="-0.8" z="0" />
-              <ShowOnHUD>false</ShowOnHUD>
-              <ShowInTerminal>true</ShowInTerminal>
-              <ShowInToolbarConfig>true</ShowInToolbarConfig>
-              <ShowInInventory>true</ShowInInventory>
-              <NumberInGrid>1</NumberInGrid>
-              <Enabled>true</Enabled>
-              <CurrentStoredPower>9.15736455E-05</CurrentStoredPower>
-              <ProducerEnabled>true</ProducerEnabled>
-              <MaxStoredPower>0</MaxStoredPower>
-              <SemiautoEnabled>false</SemiautoEnabled>
-              <OnlyDischargeEnabled>false</OnlyDischargeEnabled>
-              <ChargeMode>0</ChargeMode>
+              <SitAnimation>171417</SitAnimation>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallEjectorSeatRocket</SubtypeName>
-              <EntityId>89333515733445608</EntityId>
-              <Min x="0" y="-2" z="2" />
+              <EntityId>123804516511349689</EntityId>
+              <Min x="0" y="-1" z="2" />
               <BlockOrientation Forward="Down" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="0" />
+              <ShareMode>Faction</ShareMode>
               <ComponentContainer>
                 <Components>
                   <ComponentData>
@@ -168,7 +135,7 @@ However, some effort has been made for your future survival; you will find it is
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>false</TimerEnabled>
+                      <TimerEnabled>true</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -183,11 +150,31 @@ However, some effort has been made for your future survival; you will find it is
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
               <ShowInInventory>true</ShowInInventory>
               <NumberInGrid>1</NumberInGrid>
-              <Enabled>false</Enabled>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
+              <SubtypeName>EjectorController</SubtypeName>
+              <EntityId>104053486360964040</EntityId>
+              <Min x="0" y="2" z="2" />
+              <BlockOrientation Forward="Left" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.8" z="0" />
+              <ShareMode>Faction</ShareMode>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>true</Enabled>
+              <CurrentStoredPower>9.99E-05</CurrentStoredPower>
+              <ProducerEnabled>true</ProducerEnabled>
+              <MaxStoredPower>0</MaxStoredPower>
+              <SemiautoEnabled>false</SemiautoEnabled>
+              <OnlyDischargeEnabled>false</OnlyDischargeEnabled>
+              <ChargeMode>0</ChargeMode>
             </MyObjectBuilder_CubeBlock>
           </CubeBlocks>
 		  <DampenersEnabled>false</DampenersEnabled>
-		  <DisplayName>EjectorSeat</DisplayName>
+          <DisplayName>EjectorSeat</DisplayName>
           <DestructibleBlocks>true</DestructibleBlocks>
           <CreatePhysics>false</CreatePhysics>
           <EnableSmallToLargeConnections>false</EnableSmallToLargeConnections>

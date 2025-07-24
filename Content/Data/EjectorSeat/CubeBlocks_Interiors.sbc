@@ -21,7 +21,7 @@
             <UsesDeformation>false</UsesDeformation>
             <Components>
                 <Component Subtype="InteriorPlate" Count="10" />
-                <Component Subtype="Construction" Count="20" />
+                <Component Subtype="Construction" Count="10" />
                 <Component Subtype="InteriorPlate" Count="10" />
 				<Component Subtype="SteelPlate" Count="2"/>
 			</Components>
@@ -31,7 +31,8 @@
 			</MountPoints>
             <BuildProgressModels>
 				<Model BuildPercentUpperBound="0.50" File="Models\Cubes\small\EjectorSeat_BS1.mwm"/>
-				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\EjectorSeat_BS2.mwm"/>            </BuildProgressModels>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\EjectorSeat_BS2.mwm"/>
+			</BuildProgressModels>
             <VoxelPlacement>
                 <StaticMode>
                     <PlacementMode>OutsideVoxel</PlacementMode>
