@@ -29,7 +29,7 @@ namespace HardStart
 
         public override void Init(MyObjectBuilder_EntityBase objectBuilder)
         {
-            if (!MyAPIGateway.Session.IsServer)
+            if (MyAPIGateway.Utilities.IsDedicated)
                 return;
 
             block = Entity as IMyCubeBlock;
