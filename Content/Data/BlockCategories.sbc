@@ -13,8 +13,6 @@
                 <string>SurvivalKit/EmergencySurvivalKit</string>
 				<string>OxygenGenerator/EmergencyOxygenGeneratorSmall</string>
 				<string>Reactor/EmergencySmallGenerator</string>
-				<string>Thrust/SmallEjectorSeatRocket</string>
-				<string>BatteryBlock/EjectorController</string>
 			</ItemIds>
         </Category>
     </CategoryClasses>

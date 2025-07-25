@@ -8,7 +8,8 @@
                 <SubtypeId>EjectorSeat</SubtypeId>
                 <!-- Small block passenger seat -->
             </Id>
-            <DisplayName>Ejector Seat</DisplayName>
+			<Public>false</Public>
+			<DisplayName>Ejector Seat</DisplayName>
 			<Icon>Textures\GUI\Icons\Cubes\EjectorSeat.dds</Icon>
 			<Description>Ejector Seat</Description>
             <CubeSize>Small</CubeSize>
@@ -20,12 +21,17 @@
             <CharacterAnimationFemale>PassengerseatFemale_Small_Adjusted</CharacterAnimationFemale>
             <UsesDeformation>false</UsesDeformation>
             <Components>
-                <Component Subtype="InteriorPlate" Count="10" />
+				<Component Subtype="EjectorSeatParts" Count="1" >
+					<DeconstructId>
+						<TypeId>Component</TypeId>
+						<SubtypeId>SteelPlate</SubtypeId>
+					</DeconstructId>
+				</Component>
+				<Component Subtype="EmergencySurvivalKitParts" Count="1" />
+				<Component Subtype="InteriorPlate" Count="20" />
                 <Component Subtype="Construction" Count="10" />
-                <Component Subtype="InteriorPlate" Count="10" />
-				<Component Subtype="SteelPlate" Count="2"/>
 			</Components>
-            <CriticalComponent Subtype="InteriorPlate" Index="0" />
+            <CriticalComponent Subtype="Construction" Index="0" />
             <MountPoints>
 				<MountPoint Side="Back" StartX="1.00" StartY="1.00" EndX="2.00" EndY="2.00"/>
 			</MountPoints>

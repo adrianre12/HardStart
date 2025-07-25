@@ -6,7 +6,8 @@
                 <TypeId>BatteryBlock</TypeId>
                 <SubtypeId>EjectorController</SubtypeId>
             </Id>
-            <DisplayName>Ejector Controller</DisplayName>
+			<Public>false</Public>
+			<DisplayName>Ejector Controller</DisplayName>
             <Icon>Textures\GUI\Icons\EjectorController.dds</Icon>
             <Description>Ejector Seat combined controller and power source.</Description>
             <CubeSize>Small</CubeSize>
@@ -16,6 +17,12 @@
             <ModelOffset x="0" y="0" z="0" />
             <Model>Models\Cubes\small\EjectorController.mwm</Model>
             <Components>
+				<Component Subtype="EjectorSeatParts" Count="1" >
+					<DeconstructId>
+						<TypeId>Component</TypeId>
+						<SubtypeId>SteelPlate</SubtypeId>
+					</DeconstructId>
+				</Component>
 				<Component Subtype="EmergencySurvivalKitParts" Count="1" />
 				<Component Subtype="Computer" Count="1" />
 			</Components>

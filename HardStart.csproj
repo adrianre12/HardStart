@@ -26,6 +26,7 @@
 	<AdditionalFiles Include="thumb.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Content\Data\CubeBlocks\" />
     <Folder Include="Content\Models\" />
   </ItemGroup>
 </Project>

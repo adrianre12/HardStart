@@ -6,6 +6,7 @@
 				<TypeId>Thrust</TypeId>
 				<SubtypeId>SmallEjectorSeatRocket</SubtypeId>
 			</Id>
+			<Public>false</Public>
 			<DisplayName>Small Rocket</DisplayName>
 			<Icon>Textures\GUI\Icons\EjectorSeatRocket.dds</Icon>
 			<Description>Bi-propellant Monomethylhydrazine/Dinitrogen Tetroxide Ejector seat engine.</Description>
@@ -18,6 +19,12 @@
 			<ThrusterType>Hydrogen</ThrusterType>
 			<SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
 			<Components>
+				<Component Subtype="EjectorSeatParts" Count="1" >
+					<DeconstructId>
+						<TypeId>Component</TypeId>
+						<SubtypeId>SteelPlate</SubtypeId>
+					</DeconstructId>
+				</Component>
 				<Component Subtype="EmergencyAtomicGeneratorParts" Count="1" />
 				<Component Subtype="EmergencyOxygenGeneratorParts" Count="1" />
 				<Component Subtype="EmergencySurvivalKitParts" Count="1" />

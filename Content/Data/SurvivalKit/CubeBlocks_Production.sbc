@@ -15,8 +15,8 @@
 			<ModelOffset x="0" y="0" z="0" />
 			<Model>Models\Cubes\small\EmergencySK.mwm</Model>
 			<Components>
-				<Component Subtype="EmergencySurvivalKitParts" Count="2" />
-				<Component Subtype="SteelPlate" Count="2" />
+				<Component Subtype="EmergencySurvivalKitParts" Count="3" />
+				<Component Subtype="SteelPlate" Count="3" />
 				<Component Subtype="InteriorPlate" Count="10" />
 				<Component Subtype="Computer" Count="1" />
 			</Components>
