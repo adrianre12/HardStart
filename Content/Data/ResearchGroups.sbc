@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ResearchGroups>
+		<ResearchGroup xsi:type="ResearchGroup">
+			<Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="14" />
+			<Members>
+				<BlockId Type="MyObjectBuilder_OxygenTank" Subtype="LargeHydrogenTank" />
+				<BlockId Type="MyObjectBuilder_OxygenTank" Subtype="LargeHydrogenTankIndustrial" />
+				<BlockId Type="MyObjectBuilder_OxygenTank" Subtype="LargeHydrogenTankSmall" />
+				<BlockId Type="MyObjectBuilder_OxygenTank" Subtype="LargeHydrogenTankSmallLab" />
+				<BlockId Type="MyObjectBuilder_OxygenTank" Subtype="SmallHydrogenTankLab" />
+				<BlockId Type="MyObjectBuilder_OxygenTank" Subtype="SmallHydrogenTank" />
+				<BlockId Type="MyObjectBuilder_OxygenTank" Subtype="SmallHydrogenTankSmall" />
+			</Members>
+		</ResearchGroup>
+
+		<ResearchGroup xsi:type="ResearchGroup">
+			<Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="54" />
+			<Members>
+				<BlockId Type="MyObjectBuilder_LandingGear" Subtype="LargeBlockLandingGear" />
+				<BlockId Type="MyObjectBuilder_LandingGear" Subtype="SmallBlockLandingGear" />
+				<BlockId Type="MyObjectBuilder_LandingGear" Subtype="LargeBlockMagneticPlate" />
+				<BlockId Type="MyObjectBuilder_LandingGear" Subtype="SmallBlockMagneticPlate" />
+				<BlockId Type="MyObjectBuilder_LandingGear" Subtype="LargeBlockSmallMagneticPlate" />
+				<BlockId Type="MyObjectBuilder_LandingGear" Subtype="SmallBlockSmallMagneticPlate" />
+			</Members>
+		</ResearchGroup>
+		
+	</ResearchGroups>
+</Definitions>
