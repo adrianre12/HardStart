@@ -1,0 +1,48 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ResearchBlocks>
+
+		<ResearchBlock xsi:type="ResearchBlock">
+			<Id Type="MyObjectBuilder_LandingGear" Subtype="LargeBlockLandingGear" />
+			<UnlockedByGroups>
+				<GroupSubtype>14</GroupSubtype>
+			</UnlockedByGroups>
+		</ResearchBlock>
+		
+		<ResearchBlock xsi:type="ResearchBlock">
+			<Id Type="MyObjectBuilder_LandingGear" Subtype="SmallBlockLandingGear" />
+			<UnlockedByGroups>
+				<GroupSubtype>14</GroupSubtype>
+			</UnlockedByGroups>
+		</ResearchBlock>
+		
+		<ResearchBlock xsi:type="ResearchBlock">
+			<Id Type="MyObjectBuilder_LandingGear" Subtype="LargeBlockMagneticPlate" />
+			<UnlockedByGroups>
+				<GroupSubtype>14</GroupSubtype>
+			</UnlockedByGroups>
+		</ResearchBlock>
+		
+		<ResearchBlock xsi:type="ResearchBlock">
+			<Id Type="MyObjectBuilder_LandingGear" Subtype="SmallBlockMagneticPlate" />
+			<UnlockedByGroups>
+				<GroupSubtype>14</GroupSubtype>
+			</UnlockedByGroups>
+		</ResearchBlock>
+		
+		<ResearchBlock xsi:type="ResearchBlock">
+			<Id Type="MyObjectBuilder_LandingGear" Subtype="LargeBlockSmallMagneticPlate" />
+			<UnlockedByGroups>
+				<GroupSubtype>14</GroupSubtype>
+			</UnlockedByGroups>
+		</ResearchBlock>
+		
+		<ResearchBlock xsi:type="ResearchBlock">
+			<Id Type="MyObjectBuilder_LandingGear" Subtype="SmallBlockSmallMagneticPlate" />
+			<UnlockedByGroups>
+				<GroupSubtype>14</GroupSubtype>
+			</UnlockedByGroups>
+		</ResearchBlock>
+
+	</ResearchBlocks>
+</Definitions>
