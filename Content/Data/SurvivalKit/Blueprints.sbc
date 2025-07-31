@@ -12,10 +12,28 @@
 				<Item Amount="110" TypeId="Ore" SubtypeId="Stone" />
 			</Prerequisites>
 			<Results>
-				<Item Amount="15.4" TypeId="Ore" SubtypeId="StoneDust" />
+				<Item Amount="12.4" TypeId="Ore" SubtypeId="StoneDust" />
+				<Item Amount="0.32" TypeId="Ingot" SubtypeId="Stone" />
 				<Item Amount="3.3" TypeId="Ingot" SubtypeId="Iron" />
 				<Item Amount="0.26" TypeId="Ingot" SubtypeId="Nickel" />
 				<Item Amount="0.48" TypeId="Ingot" SubtypeId="Silicon" />
+			</Results>
+			<Priority>1000</Priority>
+			<BaseProductionTimeInSeconds>1</BaseProductionTimeInSeconds>
+		</Blueprint>
+
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>EmergencyStoneIngotToStoneDust</SubtypeId>
+			</Id>
+			<DisplayName>Refine Gravel</DisplayName>
+			<Icon>Textures\GUI\Icons\ingot\ingot_class.dds</Icon>
+			<Prerequisites>
+				<Item Amount="3" TypeId="Ingot" SubtypeId="Stone" />
+			</Prerequisites>
+			<Results>
+				<Item Amount="3" TypeId="Ore" SubtypeId="StoneDust" />
 			</Results>
 			<Priority>1000</Priority>
 			<BaseProductionTimeInSeconds>1</BaseProductionTimeInSeconds>

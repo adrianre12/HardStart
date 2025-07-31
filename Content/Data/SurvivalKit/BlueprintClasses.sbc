@@ -22,5 +22,6 @@
 
 		<!-- Survival Kit -->
         <Entry Class="EmergencySurvivalKitIngots" BlueprintSubtypeId="EmergencyStoneOreToIngotBasic" />
-    </BlueprintClassEntries>
+		<Entry Class="EmergencySurvivalKitIngots" BlueprintSubtypeId="EmergencyStoneIngotToStoneDust" />
+	</BlueprintClassEntries>
 </Definitions>
